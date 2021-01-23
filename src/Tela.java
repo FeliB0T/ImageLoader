@@ -23,12 +23,13 @@ public class Tela {
 
         String texto = textField.getText();
         textField.setText("");
+        textoFinal = texto;
+
         try {
             tryRequest();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        textoFinal = texto;
 
     }
     public void criarTela(String titulo) {
